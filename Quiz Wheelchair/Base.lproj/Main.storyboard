@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ao2-oX-Xlg">
                                 <rect key="frame" x="20" y="64" width="335" height="694"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какая коляска вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какая коляска вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="71"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,14 +28,20 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Yq-WdN">
                                         <rect key="frame" x="0.0" y="91" width="335" height="533"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun" customClass="RoundButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun">
                                         <rect key="frame" x="57.666666666666686" y="644" width="220" height="50"/>
+                                        <color key="backgroundColor" red="0.25490196078431371" green="0.41176470588235292" blue="0.88235294117647056" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Cy5-3v-KtY"/>
                                             <constraint firstAttribute="height" constant="50" id="G2n-pQ-IH2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="  Начать подбор  "/>
+                                        <state key="normal" title="  Начать подбор  ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIo-ix-wWb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -61,22 +67,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+            <point key="canvasLocation" x="-446" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="Qcl-VX-Dtt">
             <objects>
-                <viewController id="9ll-5t-egg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questions" id="9ll-5t-egg" customClass="QuestionsViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BIe-zI-gUl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-EP-vLs">
+                                <rect key="frame" x="20" y="108" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="c3k-Py-iL2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lgz-EP-vLs" firstAttribute="top" secondItem="c3k-Py-iL2" secondAttribute="top" constant="20" id="BE2-Ou-sOT"/>
+                            <constraint firstItem="c3k-Py-iL2" firstAttribute="trailing" secondItem="lgz-EP-vLs" secondAttribute="trailing" constant="20" id="MUt-dG-adF"/>
+                            <constraint firstItem="lgz-EP-vLs" firstAttribute="leading" secondItem="c3k-Py-iL2" secondAttribute="leading" constant="20" id="q97-tM-0y6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="UkB-K7-Y4I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRl-0G-bwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="94"/>
+            <point key="canvasLocation" x="1871.2" y="93.842364532019715"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LsC-yN-YpZ">
@@ -91,7 +111,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOW-SG-U49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="94"/>
+            <point key="canvasLocation" x="2690.4000000000001" y="93.842364532019715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CBh-bo-HYG">
+            <objects>
+                <navigationController storyboardIdentifier="navController" automaticallyAdjustsScrollViewInsets="NO" id="Hag-cd-8z3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dga-1i-jX7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ll-5t-egg" kind="relationship" relationship="rootViewController" id="cgg-GG-fGX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJe-bD-2z1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="93.842364532019715"/>
         </scene>
     </scenes>
     <resources>
