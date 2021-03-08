@@ -15,14 +15,14 @@ class WelcomeViewController: UIViewController {
         
         super.viewDidLoad()
 
-        startQuizButton.makeRoundedCorners()
+        //startQuizButton.makeRoundedCorners()
 
     }
     
     
     @IBAction func startQuiz () {
         
-        let vc = storyboard?.instantiateViewController(identifier: "navController") as! UINavigationController
+        let vc = storyboard?.instantiateViewController(identifier: "NavController") as! UINavigationController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
         

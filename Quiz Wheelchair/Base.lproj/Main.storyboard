@@ -11,7 +11,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomePage" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,26 +19,32 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ao2-oX-Xlg">
                                 <rect key="frame" x="20" y="64" width="335" height="694"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какая коляска вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="71"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какая коляска вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6nE-RC-trm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Yq-WdN">
-                                        <rect key="frame" x="0.0" y="91" width="335" height="533"/>
+                                        <rect key="frame" x="0.0" y="50" width="335" height="574"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
                                         <rect key="frame" x="57.666666666666686" y="644" width="220" height="50"/>
                                         <color key="backgroundColor" red="0.25490196078431371" green="0.41176470588235292" blue="0.88235294117647056" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Cy5-3v-KtY"/>
                                             <constraint firstAttribute="height" constant="50" id="G2n-pQ-IH2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                         <state key="normal" title="  Начать подбор  ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="startQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIo-ix-wWb"/>
                                         </connections>
@@ -72,23 +78,106 @@
         <!--Title-->
         <scene sceneID="Qcl-VX-Dtt">
             <objects>
-                <viewController storyboardIdentifier="questions" id="9ll-5t-egg" customClass="QuestionsViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionsPage" id="9ll-5t-egg" customClass="QuestionsViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BIe-zI-gUl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-EP-vLs">
-                                <rect key="frame" x="20" y="108" width="335" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-EP-vLs">
+                                <rect key="frame" x="20" y="108" width="335" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6wu-is-Urn">
+                                <rect key="frame" x="20" y="754" width="335" height="4"/>
+                                <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aoM-fK-MXv" userLabel="Buttons Stack View">
+                                <rect key="frame" x="20" y="357" width="335" height="158"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-DA-nqr" userLabel="Button 1" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="32"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundedButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-OT-2iD" userLabel="Button 2" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="42" width="335" height="32"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundedButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGU-ik-UxD" userLabel="Button 3" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="335" height="32"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundedButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-bL-dOj" userLabel="Button 4" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="126" width="335" height="32"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button 4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundedButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yGU-ik-UxD" firstAttribute="centerX" secondItem="aoM-fK-MXv" secondAttribute="centerX" id="0bQ-9b-vXW"/>
+                                    <constraint firstItem="3gm-bL-dOj" firstAttribute="height" secondItem="tYf-DA-nqr" secondAttribute="height" id="7y6-Ez-YJY"/>
+                                    <constraint firstItem="3gm-bL-dOj" firstAttribute="centerX" secondItem="tYf-DA-nqr" secondAttribute="centerX" id="9GF-Yi-Zwe"/>
+                                    <constraint firstItem="yGU-ik-UxD" firstAttribute="height" secondItem="tYf-DA-nqr" secondAttribute="height" id="HvY-4h-m84"/>
+                                    <constraint firstItem="3gm-bL-dOj" firstAttribute="width" secondItem="tYf-DA-nqr" secondAttribute="width" id="J1Z-KU-58p"/>
+                                    <constraint firstItem="tYf-DA-nqr" firstAttribute="centerX" secondItem="aoM-fK-MXv" secondAttribute="centerX" id="M28-es-XyA"/>
+                                    <constraint firstItem="Ffn-OT-2iD" firstAttribute="centerX" secondItem="tYf-DA-nqr" secondAttribute="centerX" id="Rme-pN-IYS"/>
+                                    <constraint firstItem="Ffn-OT-2iD" firstAttribute="centerX" secondItem="aoM-fK-MXv" secondAttribute="centerX" id="U4O-CC-hfc"/>
+                                    <constraint firstItem="3gm-bL-dOj" firstAttribute="centerX" secondItem="aoM-fK-MXv" secondAttribute="centerX" id="Ur0-fF-VZc"/>
+                                    <constraint firstItem="Ffn-OT-2iD" firstAttribute="height" secondItem="tYf-DA-nqr" secondAttribute="height" id="Xkh-aU-ijr"/>
+                                    <constraint firstItem="Ffn-OT-2iD" firstAttribute="width" secondItem="tYf-DA-nqr" secondAttribute="width" id="t9j-Yf-rSw"/>
+                                    <constraint firstItem="yGU-ik-UxD" firstAttribute="width" secondItem="tYf-DA-nqr" secondAttribute="width" id="tux-ZD-fSb"/>
+                                    <constraint firstItem="yGU-ik-UxD" firstAttribute="centerX" secondItem="tYf-DA-nqr" secondAttribute="centerX" id="zYX-9Z-2KY"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c3k-Py-iL2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lgz-EP-vLs" firstAttribute="top" secondItem="c3k-Py-iL2" secondAttribute="top" constant="20" id="BE2-Ou-sOT"/>
                             <constraint firstItem="c3k-Py-iL2" firstAttribute="trailing" secondItem="lgz-EP-vLs" secondAttribute="trailing" constant="20" id="MUt-dG-adF"/>
+                            <constraint firstItem="aoM-fK-MXv" firstAttribute="centerX" secondItem="BIe-zI-gUl" secondAttribute="centerX" id="R5C-D4-UBb"/>
+                            <constraint firstItem="c3k-Py-iL2" firstAttribute="trailing" secondItem="aoM-fK-MXv" secondAttribute="trailing" constant="20" id="V5T-Ty-XWh"/>
+                            <constraint firstItem="6wu-is-Urn" firstAttribute="leading" secondItem="c3k-Py-iL2" secondAttribute="leading" constant="20" id="WCS-JM-QHe"/>
+                            <constraint firstItem="c3k-Py-iL2" firstAttribute="bottom" secondItem="6wu-is-Urn" secondAttribute="bottom" constant="20" id="Wj5-jO-Cel"/>
+                            <constraint firstItem="c3k-Py-iL2" firstAttribute="trailing" secondItem="6wu-is-Urn" secondAttribute="trailing" constant="20" id="cEK-Hp-OvM"/>
+                            <constraint firstItem="aoM-fK-MXv" firstAttribute="leading" secondItem="c3k-Py-iL2" secondAttribute="leading" constant="20" id="fca-SO-5xA"/>
+                            <constraint firstItem="aoM-fK-MXv" firstAttribute="centerY" secondItem="BIe-zI-gUl" secondAttribute="centerY" constant="30" id="nri-54-tbn"/>
                             <constraint firstItem="lgz-EP-vLs" firstAttribute="leading" secondItem="c3k-Py-iL2" secondAttribute="leading" constant="20" id="q97-tM-0y6"/>
                         </constraints>
                     </view>
@@ -101,7 +190,7 @@
         <!--View Controller-->
         <scene sceneID="LsC-yN-YpZ">
             <objects>
-                <viewController id="Ycm-o2-uRj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnswerPage" id="Ycm-o2-uRj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpy-q8-y2Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +205,7 @@
         <!--Navigation Controller-->
         <scene sceneID="CBh-bo-HYG">
             <objects>
-                <navigationController storyboardIdentifier="navController" automaticallyAdjustsScrollViewInsets="NO" id="Hag-cd-8z3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="Hag-cd-8z3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dga-1i-jX7">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -132,6 +221,23 @@
             <point key="canvasLocation" x="928.79999999999995" y="93.842364532019715"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3gm-bL-dOj">
+            <size key="intrinsicContentSize" width="64" height="32"/>
+        </designable>
+        <designable name="Ffn-OT-2iD">
+            <size key="intrinsicContentSize" width="64" height="32"/>
+        </designable>
+        <designable name="KMx-Mt-yun">
+            <size key="intrinsicContentSize" width="172" height="37"/>
+        </designable>
+        <designable name="tYf-DA-nqr">
+            <size key="intrinsicContentSize" width="64" height="32"/>
+        </designable>
+        <designable name="yGU-ik-UxD">
+            <size key="intrinsicContentSize" width="64" height="32"/>
+        </designable>
+    </designables>
     <resources>
         <image name="main" width="343" height="470"/>
         <systemColor name="systemBackgroundColor">
