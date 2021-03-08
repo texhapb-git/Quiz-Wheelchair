@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1206E7BF25F63EF6008376F7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1206E7BE25F63EF6008376F7 /* RoundedButton.swift */; };
+		1208602225F6476300B77A9C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208602125F6476300B77A9C /* RoundedButton.swift */; };
+		1208602C25F660E800B77A9C /* BorderedStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208602B25F660E800B77A9C /* BorderedStackView.swift */; };
 		120C00B125F3EB7300B21F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00B025F3EB7300B21F90 /* AppDelegate.swift */; };
 		120C00B325F3EB7300B21F90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00B225F3EB7300B21F90 /* SceneDelegate.swift */; };
 		120C00B525F3EB7300B21F90 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00B425F3EB7300B21F90 /* WelcomeViewController.swift */; };
@@ -20,7 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1206E7BE25F63EF6008376F7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1208602125F6476300B77A9C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1208602B25F660E800B77A9C /* BorderedStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedStackView.swift; sourceTree = "<group>"; };
 		120C00AD25F3EB7300B21F90 /* Quiz Wheelchair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Wheelchair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		120C00B025F3EB7300B21F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		120C00B225F3EB7300B21F90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				120C00E325F568C400B21F90 /* EllipseButton.swift */,
-				1206E7BE25F63EF6008376F7 /* RoundedButton.swift */,
+				1208602125F6476300B77A9C /* RoundedButton.swift */,
+				1208602B25F660E800B77A9C /* BorderedStackView.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -177,8 +180,9 @@
 				120C00DB25F54D2F00B21F90 /* UIButtonExtends.swift in Sources */,
 				120C00E425F568C400B21F90 /* EllipseButton.swift in Sources */,
 				120C00B125F3EB7300B21F90 /* AppDelegate.swift in Sources */,
-				1206E7BF25F63EF6008376F7 /* RoundedButton.swift in Sources */,
+				1208602225F6476300B77A9C /* RoundedButton.swift in Sources */,
 				120C00D425F4278400B21F90 /* QuestionsViewController.swift in Sources */,
+				1208602C25F660E800B77A9C /* BorderedStackView.swift in Sources */,
 				120C00B325F3EB7300B21F90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
