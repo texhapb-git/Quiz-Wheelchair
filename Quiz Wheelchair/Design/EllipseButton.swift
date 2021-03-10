@@ -9,18 +9,22 @@ import UIKit
 
 @IBDesignable
 class EllipseButton: UIButton {
+    
+    func updateButton() {
+        layer.cornerRadius = frame.height / 2
+    }
 
     @IBInspectable var EllipseButton:Bool = false {
         didSet{
             if EllipseButton {
-                layer.cornerRadius = frame.height / 2
+                updateButton()
             }
         }
     }
     
     override func prepareForInterfaceBuilder() {
         if EllipseButton {
-            layer.cornerRadius = frame.height / 2
+            updateButton()
         }
     }
 

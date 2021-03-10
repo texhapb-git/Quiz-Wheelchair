@@ -10,33 +10,31 @@ import UIKit
 @IBDesignable
 class BorderedStackView: UIStackView {
     
-    let borderLineColor = UIColor.lightGray.cgColor
-    let borderWidthValue: CGFloat = 1
-    let corderRadiusValue: CGFloat = 10
-    let layoutMargingValue = UIEdgeInsets(top: 6, left: 15, bottom: 6, right: 15)
-    let marginArrangement = true
+    func updateStack() {
+        
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.cornerRadius = 10
+        layoutMargins = UIEdgeInsets(top: 6, left: 15, bottom: 6, right: 15)
+        isLayoutMarginsRelativeArrangement = true
+    }
+    
 
     @IBInspectable var BorderedStackView:Bool = false {
         didSet{
             if BorderedStackView {
-                layer.borderWidth = borderWidthValue
-                layer.borderColor = borderLineColor
-                layer.cornerRadius = corderRadiusValue
-                layoutMargins = layoutMargingValue
-                isLayoutMarginsRelativeArrangement = marginArrangement
+                updateStack()
             }
         }
     }
     
     override func prepareForInterfaceBuilder() {
         if BorderedStackView {
-            layer.borderWidth = borderWidthValue
-            layer.borderColor = borderLineColor
-            layer.cornerRadius = corderRadiusValue
-            layoutMargins = layoutMargingValue
-            isLayoutMarginsRelativeArrangement = marginArrangement
+            updateStack()
         }
     }
+    
+    
     
 
 }

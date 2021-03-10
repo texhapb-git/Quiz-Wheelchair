@@ -9,20 +9,24 @@ import UIKit
 
 @IBDesignable
 class RoundedButton: UIButton {
+    
+    func updateButton() {
+        layer.cornerRadius = 10
+    }
 
-    let cornerRadiusValue: CGFloat = 10
+    
     
     @IBInspectable var RoundedButton:Bool = false {
         didSet{
             if RoundedButton {
-                layer.cornerRadius = cornerRadiusValue
+                updateButton()
             }
         }
     }
     
     override func prepareForInterfaceBuilder() {
         if RoundedButton {
-            layer.cornerRadius = cornerRadiusValue
+            updateButton()
         }
     }
 
