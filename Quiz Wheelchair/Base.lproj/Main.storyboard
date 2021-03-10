@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,29 @@
             <objects>
                 <viewController storyboardIdentifier="WelcomePage" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ao2-oX-Xlg" userLabel="Welcome Stack View">
-                                <rect key="frame" x="20" y="20" width="280" height="440"/>
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какая коляска вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="6nE-RC-trm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Какая коляска Вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="29"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Yq-WdN">
-                                        <rect key="frame" x="0.0" y="50" width="280" height="320"/>
+                                        <rect key="frame" x="15.5" y="65" width="343" height="643"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="390" width="220" height="50"/>
+                                        <rect key="frame" x="77" y="728" width="220" height="50"/>
                                         <color key="backgroundColor" red="0.25490196078431371" green="0.41176470588235292" blue="0.88235294117647056" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Cy5-3v-KtY"/>
                                             <constraint firstAttribute="height" constant="50" id="G2n-pQ-IH2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
-                                        <state key="normal" title="  Начать подбор  ">
+                                        <state key="normal" title="Начать подбор">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -79,31 +76,31 @@
             <objects>
                 <viewController storyboardIdentifier="QuestionsPage" id="9ll-5t-egg" customClass="QuestionsViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BIe-zI-gUl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-EP-vLs">
-                                <rect key="frame" x="20" y="64" width="280" height="30"/>
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6wu-is-Urn">
-                                <rect key="frame" x="20" y="456" width="280" height="4"/>
+                                <rect key="frame" x="20" y="838" width="374" height="4"/>
                                 <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-hV-5HR" userLabel="Slider Stack View">
-                                <rect key="frame" x="20" y="190.5" width="280" height="159"/>
+                                <rect key="frame" x="20" y="398.5" width="374" height="159"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="66J-2x-zsG">
-                                        <rect key="frame" x="-2" y="0.0" width="284" height="34.5"/>
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="34.5"/>
                                         <color key="minimumTrackTintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oWk-v4-Eer" userLabel="Slider Labels Stack View">
-                                        <rect key="frame" x="0.0" y="63.5" width="280" height="25.5"/>
+                                        <rect key="frame" x="0.0" y="63.5" width="374" height="25.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZq-vA-TSe">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="25.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="25.5"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -111,7 +108,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jM-zS-57u" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="119" width="280" height="40"/>
+                                        <rect key="frame" x="0.0" y="119" width="374" height="40"/>
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="MpA-oa-hNw"/>
@@ -207,10 +204,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aoM-fK-MXv" userLabel="Buttons Stack View">
-                                <rect key="frame" x="20" y="191" width="280" height="158"/>
+                                <rect key="frame" x="20" y="399" width="374" height="158"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-DA-nqr" userLabel="Button 1" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -222,7 +219,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-OT-2iD" userLabel="Button 2" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="42" width="280" height="32"/>
+                                        <rect key="frame" x="0.0" y="42" width="374" height="32"/>
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -234,7 +231,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGU-ik-UxD" userLabel="Button 3" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84" width="280" height="32"/>
+                                        <rect key="frame" x="0.0" y="84" width="374" height="32"/>
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -246,7 +243,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-bL-dOj" userLabel="Button 4" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="126" width="280" height="32"/>
+                                        <rect key="frame" x="0.0" y="126" width="374" height="32"/>
                                         <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <color key="tintColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -295,12 +292,6 @@
                             <constraint firstItem="lgz-EP-vLs" firstAttribute="leading" secondItem="c3k-Py-iL2" secondAttribute="leading" constant="20" id="q97-tM-0y6"/>
                             <constraint firstItem="J3N-76-Bq9" firstAttribute="centerY" secondItem="BIe-zI-gUl" secondAttribute="centerY" constant="35" id="u6E-al-qkt"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="J3N-76-Bq9"/>
-                                <exclude reference="aoM-fK-MXv"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mI6-hz-C1v" userLabel="Question View"/>
                 </viewController>
@@ -313,10 +304,63 @@
             <objects>
                 <viewController storyboardIdentifier="AnswerPage" id="Ycm-o2-uRj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpy-q8-y2Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-I5-OOQ" userLabel="Result Stack View">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам идеально подходит коляска &quot;Книжка&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="gfl-qQ-xVJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="main" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-z6-kMw">
+                                        <rect key="frame" x="15.5" y="103" width="343" height="470"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-w7-AdT">
+                                        <rect key="frame" x="0.0" y="623.5" width="374" height="64.5"/>
+                                        <string key="text">Какая коляска вам подходит? Какая коляска вам подходит? Какая коляска вам подходит? Какая коляска вам подходит? Какая коляска вам подходит? Какая коляска вам подходит?</string>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-3H-fQZ" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
+                                        <rect key="frame" x="77" y="738" width="220" height="40"/>
+                                        <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Luu-Jk-OQP"/>
+                                            <constraint firstAttribute="height" constant="40" id="yo5-bY-sKs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <state key="normal" title="Пройти еще раз">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="EllipseButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2H-gI-W2x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PaR-w7-AdT" firstAttribute="leading" secondItem="zaT-I5-OOQ" secondAttribute="leading" id="2fM-b1-OH6"/>
+                                    <constraint firstAttribute="trailing" secondItem="gfl-qQ-xVJ" secondAttribute="trailing" id="5Ge-yc-m1c"/>
+                                    <constraint firstItem="gfl-qQ-xVJ" firstAttribute="leading" secondItem="zaT-I5-OOQ" secondAttribute="leading" id="Ic1-ZV-fVu"/>
+                                    <constraint firstItem="tns-3H-fQZ" firstAttribute="centerX" secondItem="zaT-I5-OOQ" secondAttribute="centerX" id="hwH-kO-1Ps"/>
+                                    <constraint firstAttribute="trailing" secondItem="PaR-w7-AdT" secondAttribute="trailing" id="uSe-wf-f5x"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K2R-iK-RmS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zaT-I5-OOQ" secondAttribute="trailing" constant="20" id="2iq-8b-ej5"/>
+                            <constraint firstItem="K2R-iK-RmS" firstAttribute="bottom" secondItem="zaT-I5-OOQ" secondAttribute="bottom" constant="20" id="59d-qr-QR9"/>
+                            <constraint firstItem="zaT-I5-OOQ" firstAttribute="leading" secondItem="vpy-q8-y2Z" secondAttribute="leading" constant="20" id="GaB-5b-XKO"/>
+                            <constraint firstItem="zaT-I5-OOQ" firstAttribute="top" secondItem="K2R-iK-RmS" secondAttribute="top" constant="20" id="PoN-MB-w8m"/>
+                            <constraint firstItem="zaT-I5-OOQ" firstAttribute="centerX" secondItem="vpy-q8-y2Z" secondAttribute="centerX" id="vMM-b7-ltZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOW-SG-U49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -329,7 +373,7 @@
                 <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="Hag-cd-8z3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dga-1i-jX7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -356,10 +400,13 @@
             <size key="intrinsicContentSize" width="64" height="32"/>
         </designable>
         <designable name="KMx-Mt-yun">
-            <size key="intrinsicContentSize" width="172" height="37"/>
+            <size key="intrinsicContentSize" width="148" height="37"/>
         </designable>
         <designable name="tYf-DA-nqr">
             <size key="intrinsicContentSize" width="64" height="32"/>
+        </designable>
+        <designable name="tns-3H-fQZ">
+            <size key="intrinsicContentSize" width="129" height="32"/>
         </designable>
         <designable name="yGU-ik-UxD">
             <size key="intrinsicContentSize" width="64" height="32"/>
