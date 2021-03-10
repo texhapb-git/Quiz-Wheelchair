@@ -20,12 +20,12 @@
                                 <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Какая коляска Вам подходит?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a0m-Ly-ul9">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="29"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-Yq-WdN">
-                                        <rect key="frame" x="15.5" y="65" width="343" height="643"/>
+                                        <rect key="frame" x="15.5" y="105" width="343" height="603"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Mt-yun" customClass="EllipseButton" customModule="Quiz_Wheelchair" customModuleProvider="target">
                                         <rect key="frame" x="77" y="728" width="220" height="50"/>
@@ -293,16 +293,22 @@
                             <constraint firstItem="J3N-76-Bq9" firstAttribute="centerY" secondItem="BIe-zI-gUl" secondAttribute="centerY" constant="35" id="u6E-al-qkt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mI6-hz-C1v" userLabel="Question View"/>
+                    <navigationItem key="navigationItem" id="mI6-hz-C1v" userLabel="Question View">
+                        <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="GNi-Mi-Md8">
+                            <connections>
+                                <action selector="finishQuiz" destination="9ll-5t-egg" id="9or-8U-h1u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRl-0G-bwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="LsC-yN-YpZ">
             <objects>
-                <viewController storyboardIdentifier="AnswerPage" id="Ycm-o2-uRj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultPage" id="Ycm-o2-uRj" customClass="ResultViewController" customModule="Quiz_Wheelchair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpy-q8-y2Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,6 +346,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="startQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2H-gI-W2x"/>
+                                            <segue destination="BPV-oc-Zoq" kind="unwind" unwindAction="unwind:" id="Fd7-0J-zIB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -364,6 +371,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOW-SG-U49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="BPV-oc-Zoq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2690.4000000000001" y="93.842364532019715"/>
         </scene>

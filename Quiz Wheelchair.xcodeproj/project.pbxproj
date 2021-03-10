@@ -18,6 +18,7 @@
 		120C00D425F4278400B21F90 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00D325F4278400B21F90 /* QuestionsViewController.swift */; };
 		120C00DB25F54D2F00B21F90 /* UIButtonExtends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00DA25F54D2F00B21F90 /* UIButtonExtends.swift */; };
 		120C00E425F568C400B21F90 /* EllipseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00E325F568C400B21F90 /* EllipseButton.swift */; };
+		1248A4C025F8FBD600183E65 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1248A4BF25F8FBD600183E65 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		120C00D325F4278400B21F90 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		120C00DA25F54D2F00B21F90 /* UIButtonExtends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtends.swift; sourceTree = "<group>"; };
 		120C00E325F568C400B21F90 /* EllipseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseButton.swift; sourceTree = "<group>"; };
+		1248A4BF25F8FBD600183E65 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				120C00B425F3EB7300B21F90 /* WelcomeViewController.swift */,
 				120C00D325F4278400B21F90 /* QuestionsViewController.swift */,
+				1248A4BF25F8FBD600183E65 /* ResultViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				120C00D425F4278400B21F90 /* QuestionsViewController.swift in Sources */,
 				1208602C25F660E800B77A9C /* BorderedStackView.swift in Sources */,
 				120C00B325F3EB7300B21F90 /* SceneDelegate.swift in Sources */,
+				1248A4C025F8FBD600183E65 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

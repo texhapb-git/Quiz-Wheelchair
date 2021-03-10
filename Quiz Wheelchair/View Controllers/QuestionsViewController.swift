@@ -16,28 +16,12 @@ class QuestionsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func finishQuiz () {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "ResultPage") as! ResultViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
     }
-    */
 
-}
-
-extension UISwitch {
-
-    func set(width: CGFloat, height: CGFloat) {
-
-        let standardHeight: CGFloat = 31
-        let standardWidth: CGFloat = 51
-
-        let heightRatio = height / standardHeight
-        let widthRatio = width / standardWidth
-
-        transform = CGAffineTransform(scaleX: widthRatio, y: heightRatio)
-    }
 }
