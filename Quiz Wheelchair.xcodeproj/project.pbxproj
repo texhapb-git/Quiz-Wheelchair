@@ -19,6 +19,10 @@
 		120C00DB25F54D2F00B21F90 /* UIButtonExtends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00DA25F54D2F00B21F90 /* UIButtonExtends.swift */; };
 		120C00E425F568C400B21F90 /* EllipseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120C00E325F568C400B21F90 /* EllipseButton.swift */; };
 		1248A4C025F8FBD600183E65 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1248A4BF25F8FBD600183E65 /* ResultViewController.swift */; };
+		12F5AF0025F91A6600415BF1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AEFF25F91A6600415BF1 /* Question.swift */; };
+		12F5AF0325F91AF900415BF1 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0225F91AF900415BF1 /* ResponseType.swift */; };
+		12F5AF0625F91B6C00415BF1 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0525F91B6C00415BF1 /* Answer.swift */; };
+		12F5AF0925F91BCC00415BF1 /* Wheelchair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		120C00DA25F54D2F00B21F90 /* UIButtonExtends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtends.swift; sourceTree = "<group>"; };
 		120C00E325F568C400B21F90 /* EllipseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseButton.swift; sourceTree = "<group>"; };
 		1248A4BF25F8FBD600183E65 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		12F5AEFF25F91A6600415BF1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		12F5AF0225F91AF900415BF1 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		12F5AF0525F91B6C00415BF1 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheelchair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +78,9 @@
 			children = (
 				120C00DE25F5684F00B21F90 /* Design */,
 				120C00D925F54CFD00B21F90 /* Extends */,
-				120C00B025F3EB7300B21F90 /* AppDelegate.swift */,
-				120C00B925F3EB7600B21F90 /* Assets.xcassets */,
-				120C00BE25F3EB7600B21F90 /* Info.plist */,
-				120C00BB25F3EB7600B21F90 /* LaunchScreen.storyboard */,
-				120C00B625F3EB7300B21F90 /* Main.storyboard */,
-				120C00B225F3EB7300B21F90 /* SceneDelegate.swift */,
+				12F5AEFA25F918FF00415BF1 /* Models */,
+				12F5AEFC25F9195400415BF1 /* Supporting Files */,
+				12F5AEFB25F9192900415BF1 /* View */,
 				120C00D625F42C5200B21F90 /* View Controllers */,
 			);
 			path = "Quiz Wheelchair";
@@ -107,6 +112,37 @@
 				1208602B25F660E800B77A9C /* BorderedStackView.swift */,
 			);
 			path = Design;
+			sourceTree = "<group>";
+		};
+		12F5AEFA25F918FF00415BF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12F5AF0525F91B6C00415BF1 /* Answer.swift */,
+				12F5AEFF25F91A6600415BF1 /* Question.swift */,
+				12F5AF0225F91AF900415BF1 /* ResponseType.swift */,
+				12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12F5AEFB25F9192900415BF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				120C00BB25F3EB7600B21F90 /* LaunchScreen.storyboard */,
+				120C00B625F3EB7300B21F90 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12F5AEFC25F9195400415BF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				120C00B025F3EB7300B21F90 /* AppDelegate.swift */,
+				120C00B925F3EB7600B21F90 /* Assets.xcassets */,
+				120C00BE25F3EB7600B21F90 /* Info.plist */,
+				120C00B225F3EB7300B21F90 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				120C00B525F3EB7300B21F90 /* WelcomeViewController.swift in Sources */,
+				12F5AF0925F91BCC00415BF1 /* Wheelchair.swift in Sources */,
 				120C00DB25F54D2F00B21F90 /* UIButtonExtends.swift in Sources */,
 				120C00E425F568C400B21F90 /* EllipseButton.swift in Sources */,
+				12F5AF0625F91B6C00415BF1 /* Answer.swift in Sources */,
+				12F5AF0325F91AF900415BF1 /* ResponseType.swift in Sources */,
+				12F5AF0025F91A6600415BF1 /* Question.swift in Sources */,
 				120C00B125F3EB7300B21F90 /* AppDelegate.swift in Sources */,
 				1208602225F6476300B77A9C /* RoundedButton.swift in Sources */,
 				120C00D425F4278400B21F90 /* QuestionsViewController.swift in Sources */,
@@ -336,7 +376,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N46BF4X43P;
-				INFOPLIST_FILE = "Quiz Wheelchair/Info.plist";
+				INFOPLIST_FILE = "Quiz Wheelchair/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N46BF4X43P;
-				INFOPLIST_FILE = "Quiz Wheelchair/Info.plist";
+				INFOPLIST_FILE = "Quiz Wheelchair/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
