@@ -12,14 +12,11 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var startQuizButton: UIButton!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-
-        //startQuizButton.makeRoundedCorners()
-
     }
     
     
+    // показ страницы с вопросами
     @IBAction func startQuiz () {
         
         let vc = storyboard?.instantiateViewController(identifier: "NavController") as! UINavigationController
@@ -28,6 +25,7 @@ class WelcomeViewController: UIViewController {
         
     }
     
+    // возврат на главный экран
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         
     }

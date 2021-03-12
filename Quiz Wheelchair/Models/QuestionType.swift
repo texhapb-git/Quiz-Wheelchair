@@ -15,3 +15,6 @@ slider - вопрос с ползунком
 enum QuestionType {
     case single, multiple, slider
 }
+
+
+

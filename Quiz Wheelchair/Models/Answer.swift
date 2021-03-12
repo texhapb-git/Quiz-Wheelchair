@@ -7,7 +7,7 @@
 
 struct Answer {
     
-    let answerText: String
-    let points: Int
+    let answerText: String // текст ответа
+    let points: Int // количество баллов за данный ответ
     
 }

@@ -5,10 +5,16 @@
 //  Created by Максим Иванов on 10.03.2021.
 //
 
+/*
+single - вопрос с одним возможным вариантом
+multiple - вопрос с несколькими возможными вариантами
+slider - вопрос с ползунком
+*/
+
 struct Question {
     
     let questionText: String
-    let questionType: ResponseType
+    let questionType: QuestionType
     let answers: [Answer]
     
     static let allQuestions: [Question] = [
@@ -23,7 +29,7 @@ struct Question {
         Question(questionText: "Где будете использовать коляску?",
                  questionType: .multiple,
                  answers: [
-                    Answer(answerText: "По ровным твёрдым покрытиям", points: 0),
+                    Answer(answerText: "По ровным покрытиям", points: 0),
                     Answer(answerText: "По просёлочным дорогам", points: 100),
                  ]
         ),
@@ -47,10 +53,10 @@ struct Question {
         Question(questionText: "Какую ценовую категорию рассматриваете?",
                  questionType: .slider,
                  answers: [
-                    Answer(answerText: "3'000—7'000", points: 0),
-                    Answer(answerText: "7'000—15'000 ", points: 0),
-                    Answer(answerText: "15'000—30'000", points: 0),
-                    Answer(answerText: "Более 30'000", points: 0),
+                    Answer(answerText: "3'000—7'000 ₽", points: 0),
+                    Answer(answerText: "7'000—15'000 ₽", points: 0),
+                    Answer(answerText: "15'000—30'000 ₽", points: 0),
+                    Answer(answerText: "Более 30'000 ₽", points: 0),
                  ]
         ),
     ]
