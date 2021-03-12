@@ -27,11 +27,11 @@
 		1258660025FB8DA9008E9DFF /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 125865F925FB8DA8008E9DFF /* 7.png */; };
 		1258660125FB8DA9008E9DFF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 125865FA25FB8DA8008E9DFF /* 3.png */; };
 		1258660425FB8E24008E9DFF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1258660325FB8E23008E9DFF /* README.md */; };
+		1258660925FB90DA008E9DFF /* Wheelchair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258660825FB90DA008E9DFF /* Wheelchair.swift */; };
 		12A53D5B25FA07E0005A1118 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A53D5A25FA07E0005A1118 /* Colors.swift */; };
 		12F5AF0025F91A6600415BF1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AEFF25F91A6600415BF1 /* Question.swift */; };
 		12F5AF0325F91AF900415BF1 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0225F91AF900415BF1 /* QuestionType.swift */; };
 		12F5AF0625F91B6C00415BF1 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0525F91B6C00415BF1 /* Answer.swift */; };
-		12F5AF0925F91BCC00415BF1 /* Wheelchair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +57,11 @@
 		125865F925FB8DA8008E9DFF /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		125865FA25FB8DA8008E9DFF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		1258660325FB8E23008E9DFF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1258660825FB90DA008E9DFF /* Wheelchair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheelchair.swift; sourceTree = "<group>"; };
 		12A53D5A25FA07E0005A1118 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		12F5AEFF25F91A6600415BF1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		12F5AF0225F91AF900415BF1 /* QuestionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType.swift; sourceTree = "<group>"; };
 		12F5AF0525F91B6C00415BF1 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheelchair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 				12F5AF0525F91B6C00415BF1 /* Answer.swift */,
 				12F5AEFF25F91A6600415BF1 /* Question.swift */,
 				12F5AF0225F91AF900415BF1 /* QuestionType.swift */,
-				12F5AF0825F91BCC00415BF1 /* Wheelchair.swift */,
+				1258660825FB90DA008E9DFF /* Wheelchair.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				120C00B525F3EB7300B21F90 /* WelcomeViewController.swift in Sources */,
-				12F5AF0925F91BCC00415BF1 /* Wheelchair.swift in Sources */,
 				120C00DB25F54D2F00B21F90 /* UIButtonExtends.swift in Sources */,
 				12A53D5B25FA07E0005A1118 /* Colors.swift in Sources */,
 				120C00E425F568C400B21F90 /* EllipseButton.swift in Sources */,
@@ -268,6 +267,7 @@
 				12F5AF0025F91A6600415BF1 /* Question.swift in Sources */,
 				120C00B125F3EB7300B21F90 /* AppDelegate.swift in Sources */,
 				1208602225F6476300B77A9C /* RoundedButton.swift in Sources */,
+				1258660925FB90DA008E9DFF /* Wheelchair.swift in Sources */,
 				120C00D425F4278400B21F90 /* QuestionsViewController.swift in Sources */,
 				1208602C25F660E800B77A9C /* BorderedStackView.swift in Sources */,
 				120C00B325F3EB7300B21F90 /* SceneDelegate.swift in Sources */,
