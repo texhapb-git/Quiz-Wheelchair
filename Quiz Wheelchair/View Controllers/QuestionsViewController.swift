@@ -27,7 +27,6 @@ class QuestionsViewController: UIViewController {
     
     @IBOutlet weak var questionProgressBar: UIProgressView!
     
-    
     var questionIndex: Int = 0
     let animationDuration: TimeInterval = 0.6
     
@@ -73,9 +72,6 @@ class QuestionsViewController: UIViewController {
             updateSliderStackView()
         }
         
-        
-        
-        
     }
     
     func updateSingleStackView() {
@@ -93,7 +89,6 @@ class QuestionsViewController: UIViewController {
         
         updateStackViewVisibility(singleStackView)
         
-
     }
     
     func updateMultipleStackView() {

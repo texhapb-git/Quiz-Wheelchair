@@ -16,9 +16,9 @@ enum DesignColors {
         
         switch self {
         case .ligthGray:
-            return UIColor.lightGray.cgColor
+            return #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         case .royalBlue:
-            return CGColor.init(red: 65/255, green: 105/255, blue: 225/255, alpha: 1)
+            return #colorLiteral(red: 0.2549019608, green: 0.4117647059, blue: 0.8823529412, alpha: 1)
         }
     }
 }

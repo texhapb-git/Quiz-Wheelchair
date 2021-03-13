@@ -16,13 +16,13 @@ enum Wheelchair: String {
     var image: UIImage {
         switch self {
         case .standartCradle:
-            return UIImage(named: "standartCradle")!
+            return #imageLiteral(resourceName: "standartCradle")
         case .foldingCradle:
-            return UIImage(named: "foldingCradle")!
+            return #imageLiteral(resourceName: "foldingCradle")
         case .book:
-            return UIImage(named: "book")!
+            return #imageLiteral(resourceName: "book")
         case .stick:
-            return UIImage(named: "stick")!
+            return #imageLiteral(resourceName: "stick")
         }
     }
         
